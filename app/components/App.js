@@ -18,12 +18,12 @@ var App = React.createClass({
 
     render: function() {
         return (
-            <div className='container'>
+            <div className='container app-container'>
                 <div className="row">
-                    < MarkdownInput
+                    <MarkdownInput
                         value={this.state.text}
                         onChange={this.updateText} />
-                    < MarkdownOutput
+                    <MarkdownOutput
                         text={this.state.text} />
                 </div>
             </div>
